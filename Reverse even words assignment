@@ -1,0 +1,23 @@
+package assignments;
+
+public class Reverseevenwords {
+	
+	public static void main(String[] args) {
+		
+		String text1="I am a software tester";
+		String[] split = text1.split(" ");
+
+		String text = "";
+		for (int i = 0; i < split.length; i++) {
+
+		if (i % 2 == 1)
+		text = text+ new StringBuilder(split[i]).reverse().toString() + " ";
+		else
+		text = text + split[i] + " ";
+		}
+		text = text.trim();
+		System.out.println(text);
+		
+	}
+
+}
