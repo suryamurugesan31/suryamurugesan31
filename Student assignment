@@ -1,0 +1,28 @@
+package assignments;
+
+  public class Students {
+	
+	public void getstudentinfo(String id){
+		
+		System.out.println(id);
+		
+	}
+	
+    public void getstudentinfo(String id,String name){
+		
+		System.out.println(id+"    "name);
+		
+    }
+    public static void main(String[] args) {
+		
+    	Students data=new Students();
+    	data.getstudentinfo("TKJL001");
+    	data.getstudentinfo("TKJL001","Surya");
+    	data.getstudentinfo("suryatamil31@gmail.com");
+    	
+    }
+  }
+    
+	
+
+	
